@@ -125,12 +125,13 @@ body {
 .container main .user-list-section .buttons {
   margin: 20px 0 30px 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: start;
 }
 .container main .user-list-section .buttons button {
   margin: 5px 5px;
-  padding: 10px 20px;
+  padding: 10px 15px;
   border: none;
   border-radius: 5px;
   background-color: #9ddd4d;
