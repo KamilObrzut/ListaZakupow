@@ -212,8 +212,10 @@ body {
   backdrop-filter: blur(5px);
 
   .modal-start {
-    position: absolute;
-    top: 20vh;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: white;
     width: 320px;
     border-radius: 10px;
@@ -250,8 +252,10 @@ body {
     }
   }
   .modal-copy {
-    position: absolute;
-    top: 30vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: white;
     width: 320px;
     border-radius: 10px;
