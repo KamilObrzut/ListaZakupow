@@ -42,7 +42,7 @@ body {
 
 .container {
   width: 300px;
-  margin: 5vh 0;
+  margin: 5vh 0 20vh 0;
   background-color: white;
   border-radius: 10px;
   border-top: 4px solid #ffc607;
@@ -120,7 +120,16 @@ body {
   color: #63b400;
 }
 .container main .user-list-section {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.container main .user-list-section h4 {
+  margin-left: 54px;
+  padding: 30px 0 20px 0;
+  text-align: left;
+  font-size: 1.4rem;
+  text-transform: uppercase;
 }
 .container main .user-list-section .buttons {
   margin: 20px 0 30px 0;
@@ -148,24 +157,11 @@ body {
 .container main .user-list-section .buttons .clear:hover {
   background-color: #fc7e43;
 }
-.container main .user-list-section .buttons .copy-clipboard:hover {
+.container main .user-list-section .buttons .sort-items:hover {
   background-color: #63b400;
 }
-.container main .user-list-section .buttons .sort-items {
-  height: 36px;
-  transition: 0.6s;
-}
-.container main .user-list-section .buttons .sort-items .soon {
-  display: none;
-  margin-top: 5px;
-  font-size: 1rem;
-}
-.container main .user-list-section .buttons .sort-items:hover {
-  height: 55px;
-}
-.container main .user-list-section .buttons .sort-items:hover .soon {
-  display: block;
-  font-size: 1.2rem;
+.container main .user-list-section .buttons .copy-clipboard:hover {
+  background-color: #63b400;
 }
 .container main .user-list-section .buttons .send-sms {
   height: 36px;
@@ -215,7 +211,7 @@ body {
   align-items: center;
   position: absolute;
   width: 100vw;
-  height: 100vh;
+  min-height: 100%;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
 }
